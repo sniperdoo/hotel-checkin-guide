@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Check-in Guide</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <!-- Language Selection -->
+    <div class="max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg mt-10">
+        <h1 class="text-2xl font-bold text-center mb-8">Select Language</h1>
+        <div class="space-y-4">
+            <button onclick="showGuide('kr')" class="w-full p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                한국어
+            </button>
+            <button onclick="showGuide('jp')" class="w-full p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                日本語
+            </button>
+            <button onclick="showGuide('cn')" class="w-full p-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">
+                中文
+            </button>
+        </div>
+    </div>
+
+    <!-- Guide Content - Korean -->
+    <div id="guide-kr" class="hidden max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+        <h2 class="text-2xl font-bold mb-6">셀프 체크인/아웃 안내</h2>
+        <div class="space-y-6">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="text-red-600">• 오후 11시 이후 직원 부재</p>
+                <p>• 직원 지원 가능 시간: 오전 9시 ~ 오후 11시</p>
+                <p>• 입구 키오스크에서 셀프 체크인/아웃</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold mb-2">체크인 방법</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>언어 선택</li>
+                    <li>"체크인" 선택</li>
+                    <li>예약 검색:
+                        <div class="ml-4 mt-2">
+                            <p>옵션 1: 이름으로 검색</p>
+                            <p class="text-sm text-gray-600 ml-4">- 이름 또는 성 (4글자 이상)</p>
+                            <p class="text-sm text-gray-600 ml-4">예시: 이름 - JOHN, 성 - SMITH</p>
+                            <p class="mt-2">옵션 2: 예약번호로 검색</p>
+                            <p class="text-sm text-gray-600 ml-4">예시: Agoda - 1432779468</p>
+                            <p class="text-sm text-gray-600 ml-4">Booking.com - 4617852306</p>
+                        </div>
+                    </li>
+                    <li>확인 및 카드키 수령:
+                        <div class="ml-4 mt-2 text-sm">
+                            <p>1. 예약자명 확인</p>
+                            <p>2. "Next" 버튼 누르기</p>
+                            <p>3. 화면과 영수증의 객실 번호 확인</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded">
+                <h3 class="font-bold text-red-700">주의사항</h3>
+                <p>• 카드키 분실 시 벌금: 10,000원</p>
+                <p>• 오후 11시 이후 분실 시 다음날 아침까지 체크인 불가</p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold text-blue-700">카드키 사용</h3>
+                <p>• 입구 유리문 개폐용</p>
+                <p>• 객실 도어락 개폐용</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="font-bold">긴급연락처 (오후 11시 이후)</h3>
+                <p>+82 10-8623-2894 또는 +82 10-2456-5002</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guide Content - Japanese -->
+    <div id="guide-jp" class="hidden max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg mt-6">
+        <h2 class="text-2xl font-bold mb-6">セルフチェックイン/アウト案内</h2>
+        <div class="space-y-6">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="text-red-600">• 23時以降スタッフ不在</p>
+                <p>• スタッフ対応時間: 9:00 ~ 23:00</p>
+                <p>• 入口のキオスクでセルフチェックイン/アウト</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold mb-2">チェックイン方法</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>言語選択</li>
+                    <li>"チェックイン"選択</li>
+                    <li>予約検索:
+                        <div class="ml-4 mt-2">
+                            <p>オプション1: 名前で検索</p>
+                            <p class="text-sm text-gray-600 ml-4">- 名前またはラストネーム (4文字以上)</p>
+                            <p class="text-sm text-gray-600 ml-4">例: 名 - JOHN, 姓 - SMITH</p>
+                            <p class="mt-2">オプション2: 予約番号で検索</p>
+                            <p class="text-sm text-gray-600 ml-4">例: Agoda - 1432779468</p>
+                            <p class="text-sm text-gray-600 ml-4">Booking.com - 4617852306</p>
+                        </div>
+                    </li>
+                    <li>確認とカードキー受け取り:
+                        <div class="ml-4 mt-2 text-sm">
+                            <p>1. 予約者名確認</p>
+                            <p>2. "Next"ボタンを押す</p>
+                            <p>3. 画面とレシートの部屋番号確認</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded">
+                <h3 class="font-bold text-red-700">注意事項</h3>
+                <p>• カードキー紛失時の手数料: 10,000ウォン</p>
+                <p>• 23時以降の紛失は翌朝までチェックイン不可</p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold text-blue-700">カードキーの使用</h3>
+                <p>• 入口のガラスドア開閉用</p>
+                <p>• 客室ドア開閉用</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="font-bold">緊急連絡先 (23時以降)</h3>
+                <p>+82 10-8623-2894 または +82 10-2456-5002</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guide Content - Chinese -->
+    <div id="guide-cn" class="hidden max-w-lg mx-auto p-6 bg-white shadow-lg rounded-lg mt-6 mb-10">
+        <h2 class="text-2xl font-bold mb-6">自助办理入住/退房指南</h2>
+        <div class="space-y-6">
+            <div class="bg-gray-50 p-4 rounded">
+                <p class="text-red-600">• 晚上11点后无工作人员</p>
+                <p>• 工作人员服务时间: 上午9点 ~ 晚上11点</p>
+                <p>• 在入口处自助服务机办理入住/退房</p>
+            </div>
+            
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold mb-2">入住步骤</h3>
+                <ol class="list-decimal list-inside space-y-2">
+                    <li>选择语言</li>
+                    <li>选择"入住"</li>
+                    <li>搜索预订:
+                        <div class="ml-4 mt-2">
+                            <p>选项1: 按姓名搜索</p>
+                            <p class="text-sm text-gray-600 ml-4">- 名字或姓氏 (4个以上字母)</p>
+                            <p class="text-sm text-gray-600 ml-4">示例: 名 - JOHN, 姓 - SMITH</p>
+                            <p class="mt-2">选项2: 按预订号搜索</p>
+                            <p class="text-sm text-gray-600 ml-4">示例: Agoda - 1432779468</p>
+                            <p class="text-sm text-gray-600 ml-4">Booking.com - 4617852306</p>
+                        </div>
+                    </li>
+                    <li>确认并领取房卡:
+                        <div class="ml-4 mt-2 text-sm">
+                            <p>1. 确认预订人姓名</p>
+                            <p>2. 点击"Next"按钮</p>
+                            <p>3. 确认屏幕和收据上的房间号</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <div class="bg-red-50 p-4 rounded">
+                <h3 class="font-bold text-red-700">注意事项</h3>
+                <p>• 房卡丢失费用: 10,000韩元</p>
+                <p>• 晚上11点后丢失需等到次日早晨办理</p>
+            </div>
+
+            <div class="bg-blue-50 p-4 rounded">
+                <h3 class="font-bold text-blue-700">房卡使用</h3>
+                <p>• 用于开关入口玻璃门</p>
+                <p>• 用于开关房间门锁</p>
+            </div>
+
+            <div class="bg-gray-50 p-4 rounded">
+                <h3 class="font-bold">紧急联系 (晚上11点后)</h3>
+                <p>+82 10-8623-2894 或 +82 10-2456-5002</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showGuide(lang) {
+            // Hide all guides
+            document.getElementById('guide-kr').classList.add('hidden');
+            document.getElementById('guide-jp').classList.add('hidden');
+            document.getElementById('guide-cn').classList.add('hidden');
+            
+            // Show selected guide
+            document.getElementById('guide-' + lang).classList.remove('hidden');
+            
+            // Scroll to guide
+            document.getElementById('guide-' + lang).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
