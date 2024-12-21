@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀프 체크인 안내 - 한국어</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/seoulhangang/SeoulHangang.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'SeoulHangang', sans-serif;
+        }
+        
+        :root {
+            --brown-main: #3a3426;
+            --brown-light: #e8e4dc;
+            --brown-dark: #2c2820;
+            --accent-red: #cf6f5a;
+            --footer-brown: #c4b5aa;
+        }
+
+        .brown-bg {
+            background-color: var(--brown-main);
+        }
+
+        .brown-light-bg {
+            background-color: var(--brown-light);
+        }
+
+        .accent-color {
+            color: var(--accent-red);
+        }
+
+        .footer-bg {
+            background-color: var(--footer-brown);
+        }
+
+        .section-box {
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--brown-main);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--brown-dark);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-3xl mx-auto p-6 my-10">
+        <!-- Title Section -->
+        <div class="brown-bg text-white p-8 rounded-t-2xl">
+            <h1 class="text-4xl font-bold text-center mb-3">셀프 체크인/아웃 안내</h1>
+            <p class="text-xl text-center">입구의 키오스크를 이용해주세요</p>
+        </div>
+
+        <!-- Basic Information -->
+        <div class="brown-light-bg p-6 rounded-lg mb-8">
+            <div class="space-y-4 text-lg">
+                <p>• 입구 키오스크에서 셀프 체크인/아웃</p>
+                <p>• 직원 지원 시간: 오전 9시 ~ 오후 11시</p>
+                <p class="accent-color font-bold">• 오후 11시 이후 직원 부재</p>
+            </div>
+        </div>
+
+        <!-- Steps Guide -->
+        <div class="bg-white rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-center py-6 border-b">체크인 방법</h2>
+            
+            <div class="p-8 space-y-8">
+                <!-- Step 01 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 01. 언어 선택</h3>
+                    <div class="brown-light-bg p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-lg">한국어</span>
+                        <div class="w-4 h-4 brown-bg rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 02. "체크인" 선택</h3>
+                    <button class="brown-bg text-white px-8 py-3 rounded-lg text-lg">체크인</button>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 03. 예약 검색</h3>
+                    <p class="text-lg mb-4">이름 또는 예약번호로 검색:</p>
+
+                    <div class="brown-light-bg p-4 rounded-lg mb-4">
+                        <p class="font-bold text-lg mb-2">옵션 1: 이름으로 검색</p>
+                        <p class="text-gray-700">예시:</p>
+                        <p class="text-gray-700">이름: JOHN    성: SMITH</p>
+                        <p class="accent-color text-sm mt-2">*4글자 이상 입력</p>
+                    </div>
+
+                    <div class="brown-light-bg p-4 rounded-lg">
+                        <p class="font-bold text-lg mb-2">옵션 2: 예약번호 뒤 4자리로 검색</p>
+                        <p class="text-gray-700">예시:</p>
+                        <p class="text-gray-700">아고다: XXXXXX5735    부킹: XXXXXX5735</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 04. 확인 및 카드키 수령</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-lg ml-4">
+                        <li>예약자 이름 확인</li>
+                        <li>"Next" 버튼을 눌러 카드키 수령</li>
+                        <li>화면과 영수증의 객실 번호 확인</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Card Usage -->
+        <div class="section-box rounded-xl p-6 mb-6">
+            <h3 class="text-2xl font-bold mb-4">카드키 사용</h3>
+            <div class="space-y-3 text-lg">
+                <p>• 입구 유리문 개폐용</p>
+                <p>• 객실 도어락 개폐용</p>
+            </div>
+        </div>
+
+        <!-- Important Notice -->
+        <div class="bg-red-50 border-2 border-red-100 rounded-xl p-6 mb-6">
+            <h3 class="text-2xl font-bold accent-color mb-4">주의사항</h3>
+            <div class="space-y-3 text-lg accent-color">
+                <p>• 카드키 분실 시 비용: 10,000원</p>
+                <p>• 오후 11시 이후 분실 시 다음날 아침 체크인</p>
+            </div>
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="footer-bg text-white rounded-xl p-6">
+            <h3 class="text-2xl font-bold mb-4">긴급연락처 (오후 11시 이후)</h3>
+            <div class="text-lg space-y-2">
+                <p>전화: +82 10-8623-2894</p>
+                <p>추가 연락처: +82 10-2456-5002</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button onclick="window.location.href='index.html'" class="back-btn">
+        언어 선택으로 돌아가기
+    </button>
+</body>
+</html>
