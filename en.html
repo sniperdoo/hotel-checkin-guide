@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Check-in Guide - English</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/seoulhangang/SeoulHangang.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'SeoulHangang', sans-serif;
+        }
+        
+        :root {
+            --brown-main: #3a3426;
+            --brown-light: #e8e4dc;
+            --brown-dark: #2c2820;
+            --accent-red: #cf6f5a;
+            --footer-brown: #c4b5aa;
+        }
+
+        .brown-bg {
+            background-color: var(--brown-main);
+        }
+
+        .brown-light-bg {
+            background-color: var(--brown-light);
+        }
+
+        .accent-color {
+            color: var(--accent-red);
+        }
+
+        .footer-bg {
+            background-color: var(--footer-brown);
+        }
+
+        .section-box {
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .back-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--brown-main);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .back-btn:hover {
+            background-color: var(--brown-dark);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-3xl mx-auto p-6 my-10">
+        <!-- Title Section -->
+        <div class="brown-bg text-white p-8 rounded-t-2xl">
+            <h1 class="text-4xl font-bold text-center mb-3">SELF CHECK-IN/OUT GUIDE</h1>
+            <p class="text-xl text-center">Use the kiosk machine at entrance</p>
+        </div>
+
+        <!-- Basic Information -->
+        <div class="brown-light-bg p-6 rounded-lg mb-8">
+            <div class="space-y-4 text-lg">
+                <p>• Use self check-in/out kiosk at entrance</p>
+                <p>• Staff assistance: 09:00 AM ~ 11:00 PM</p>
+                <p class="accent-color font-bold">• No staff available after 11:00 PM</p>
+            </div>
+        </div>
+
+        <!-- Steps Guide -->
+        <div class="bg-white rounded-xl shadow-lg mb-8">
+            <h2 class="text-3xl font-bold text-center py-6 border-b">HOW TO CHECK-IN</h2>
+            
+            <div class="p-8 space-y-8">
+                <!-- Step 01 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 01. Select Language</h3>
+                    <div class="brown-light-bg p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-lg">English</span>
+                        <div class="w-4 h-4 brown-bg rounded-full"></div>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 02. Select "Check-in"</h3>
+                    <button class="brown-bg text-white px-8 py-3 rounded-lg text-lg">Check-in</button>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 03. Search your Booking</h3>
+                    <p class="text-lg mb-4">Search using either name or booking number:</p>
+
+                    <div class="brown-light-bg p-4 rounded-lg mb-4">
+                        <p class="font-bold text-lg mb-2">Option 1: Search by First name or Last name or Full name</p>
+                        <p class="text-gray-700">Example:</p>
+                        <p class="text-gray-700">First name: JOHN    Last name: SMITH</p>
+                        <p class="accent-color text-sm mt-2">*Enter 4 more letters</p>
+                    </div>
+
+                    <div class="brown-light-bg p-4 rounded-lg">
+                        <p class="font-bold text-lg mb-2">Option 2: Search by Last 4 Digits of Reservation Number</p>
+                        <p class="text-gray-700">Example:</p>
+                        <p class="text-gray-700">Agoda: XXXXXX5735    Booking: XXXXXX5735</p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="section-box rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-4">Step 04. Verify and Get Key Card</h3>
+                    <ol class="list-decimal list-inside space-y-2 text-lg ml-4">
+                        <li>Check if your name is correct</li>
+                        <li>Press "Next" to receive your key card</li>
+                        <li>Check your Room Number on screen and receipt</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Card Usage -->
+        <div class="section-box rounded-xl p-6 mb-6">
+            <h3 class="text-2xl font-bold mb-4">KEY CARD USAGE</h3>
+            <div class="space-y-3 text-lg">
+                <p>• Use to open entrance glass door</p>
+                <p>• Use to unlock your room door</p>
+            </div>
+        </div>
+
+        <!-- Important Notice -->
+        <div class="bg-red-50 border-2 border-red-100 rounded-xl p-6 mb-6">
+            <h3 class="text-2xl font-bold accent-color mb-4">IMPORTANT</h3>
+            <div class="space-y-3 text-lg accent-color">
+                <p>• Key card loss: KRW 10,000 charge</p>
+                <p>• Lost after 11 PM: Check-in next morning</p>
+            </div>
+        </div>
+
+        <!-- Emergency Contact -->
+        <div class="footer-bg text-white rounded-xl p-6">
+            <h3 class="text-2xl font-bold mb-4">EMERGENCY CONTACT (After 11:00 PM)</h3>
+            <div class="text-lg space-y-2">
+                <p>Phone: +82 10-8623-2894</p>
+                <p>Alternative: +82 10-2456-5002</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back Button -->
+    <button onclick="window.location.href='index.html'" class="back-btn">
+        Back to Language Selection
+    </button>
+</body>
+</html>
