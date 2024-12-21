@@ -15,8 +15,6 @@
             --brown-main: #3a3426;
             --brown-light: #e8e4dc;
             --brown-dark: #2c2820;
-            --accent-red: #cf6f5a;
-            --footer-brown: #c4b5aa;
         }
 
         .brown-bg {
@@ -31,11 +29,6 @@
         .lang-btn:hover {
             background-color: var(--brown-dark);
             transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .hidden {
-            display: none;
         }
     </style>
 </head>
@@ -55,31 +48,25 @@
 
             <!-- Language Buttons -->
             <div class="grid grid-cols-2 gap-6">
-                <button onclick="showGuide('en')" class="lang-btn p-8 text-white rounded-xl">
+                <a href="en.html" class="lang-btn p-8 text-white rounded-xl text-center hover:cursor-pointer">
                     <p class="text-2xl font-bold mb-2">English</p>
                     <p class="text-sm text-gray-300">영어 / 英語 / 英语</p>
-                </button>
-                <button onclick="showGuide('kr')" class="lang-btn p-8 text-white rounded-xl">
+                </a>
+                <a href="kr.html" class="lang-btn p-8 text-white rounded-xl text-center hover:cursor-pointer">
                     <p class="text-2xl font-bold mb-2">한국어</p>
                     <p class="text-sm text-gray-300">Korean / 韓国語 / 韩语</p>
-                </button>
-                <button onclick="showGuide('jp')" class="lang-btn p-8 text-white rounded-xl">
+                </a>
+                <a href="jp.html" class="lang-btn p-8 text-white rounded-xl text-center hover:cursor-pointer">
                     <p class="text-2xl font-bold mb-2">日本語</p>
                     <p class="text-sm text-gray-300">Japanese / 일본어 / 日语</p>
-                </button>
-                <button onclick="showGuide('cn')" class="lang-btn p-8 text-white rounded-xl">
+                </a>
+                <a href="cn.html" class="lang-btn p-8 text-white rounded-xl text-center hover:cursor-pointer">
                     <p class="text-2xl font-bold mb-2">中文</p>
                     <p class="text-sm text-gray-300">Chinese / 중국어 / 中国語</p>
-                </button>
+                </a>
             </div>
         </div>
     </div>
-
-    <script>
-        function showGuide(lang) {
-            window.location.href = lang + '.html';
-        }
-    </script>
 </body>
 </html>
 <!DOCTYPE html>
